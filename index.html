@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ----------------- favicon ------------ -->
+    <link rel="icon" href="img/favicon-96.png" type="image/x-icon" />
+
+    <!-- ----------------- font awesome css ------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    
+
+    <!-- ----------------- custom css ------------ -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Timer & StopWatch</title>
+  </head>
+  <body>
+
+    <!-- =================== header start =================== -->
+    <header class="header">
+      <label class="nav-close fa fa-bars"></label>
+      <a href="index.html" class="logo"
+        >Time<span>Going</span> <img src="img/favicon-32.png" alt=""
+      /></a>
+
+      <nav class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#timer">Timer</a>
+        <a href="#stopwatch">StopWatch</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+    <!-- =================== header end =================== -->
+
+    <!-- =================== home start =================== -->
+    <section class="home active" id="home">
+      <div class="content">
+        <h1>it's real time now</h1>
+        <div id="clock"></div>
+      </div>
+    </section>
+    <!-- =================== home end =================== -->
+
+    <!-- =================== about start =================== -->
+    <section class="about" id="about">
+      <div class="section-title">
+        <h1>about <span>us</span></h1>
+      </div>
+
+      <div class="row">
+        <div class="img">
+          <img src="img/Deadline.gif" alt="" />
+        </div>
+        <div class="content">
+          <h3>time going and live is going</h3>
+          <span>but keep tracking it. </span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            nulla est aspernatur quibusdam fuga praesentium quidem! Facilis
+            velit est ipsum repellendus minima deserunt officia assumenda,
+            beatae unde consequuntur reiciendis! Nesciunt.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- =================== about end =================== -->
+
+
+    <!-- =================== timer start =================== -->
+    <section class="timer" id="timer">
+      <div class="section-title">
+        <h1>our <span>timer</span></h1>
+      </div>
+      <h3>set a timer for any task and keep learning until we finish</h3>
+
+      <div class="row">
+        <div class="img">
+          <img src="img/timer_img.jpg" alt="" />
+        </div>
+
+        <div class="content-box">
+          <div class="row">
+            <div class="time-box">
+              <span class="hours"></span>
+              <span class="name">hours</span>
+            </div>
+            <div class="time-box">
+              <span class="minutes"></span>
+              <span class="name">minutes</span>
+            </div>
+            <div class="time-box">
+              <span class="seconds"></span>
+              <span class="name">seconds</span>
+            </div>
+          </div>
+          <div class="row" id="inputs">
+            <input type="number" class="input" placeholder="hours" id="hoursValue"/>
+            <input type="number" class="input" placeholder="minutes" id="minuteValue"/>
+            <input type="number" class="input" placeholder="seconds" id="secondValue" min="0" max="60"/>
+          </div>
+          <div class="row">
+            <div class="btns">
+              <a href="#timer" class="btn" id="setBtn">start Timer</a>
+              <a href="#timer" class="btn" id="stopBtn">stop Timer</a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      
+    </section>
+    <!-- =================== timer end =================== --> 
+
+    <!-- =================== stopwatch start =================== --> 
+    <section class="stopwatch" id="stopwatch">
+      <div class="section-title"><h1>Our <span>stopWatch</span></h1></div>
+
+      <div class="row content">
+        <div class="time-box">
+          <span id="hours"></span>
+          <span class="name">hours</span>
+        </div>
+        <div class="time-box">
+          <span id="minutes"></span>
+          <span class="name">minutes</span>
+        </div>
+        <div class="time-box">
+          <span id="seconds"></span>
+          <span class="name">seconds</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btns">
+          <a href="#stopwatch" class="btn" id="start">start</a>
+          <a href="#stopwatch" class="btn" id="stop">stop</a>  
+          <a href="#stopwatch" class="btn" id="reset">reset</a>  
+        </div>
+      </div>
+    </section>
+    <!-- =================== stopwatch end =================== -->
+
+
+    <!-- =================== contact start =================== --> 
+    <section class="contact" id="contact">
+      <div class="section-title"><h1>contact <span>us</span></h1></div>
+
+      <div class="row">
+
+        <div class="row links">
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <span>Facebook</span>
+          </div>
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-github-alt"></i></div>
+            <span>github</span>
+          </div>
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <span>linkedin</span>
+          </div>
+        </div>
+  
+        <div class="form">
+          <label class="form-label"> leave A message </label>
+          <form action="">
+            <div class="input-box">
+              <input type="text" required>
+              <label>Name..</label>
+            </div>
+            <div class="input-box">
+              <input type="email" required>
+              <label>email..</label>
+            </div>
+            <div class="input-box">
+              <textarea rows="4" required></textarea>
+              <label>message..</label>
+            </div>
+            <a href="#contact" class="btn">Send</a>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    <!-- =================== contact end =================== -->
+
+
+    <!-- =================== footer start =================== -->
+    <footer class="footer">
+      <div class="row content">
+        <div class="quick-links">
+          <h3>quick links</h3>
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#timer">Timer</a>
+          <a href="#stopwatch">StopWatch</a>
+          <a href="#contact">contact</a>
+        </div>
+
+
+        <div class="our-products">
+          <h3>our products</h3>
+          <a href="#timer">Timer</a>
+          <a href="#stopwatch">StopWatch</a>
+        </div>
+
+        <div class="social">
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <span>Facebook</span>
+          </div>
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-github-alt"></i></div>
+            <span>github</span>
+          </div>
+          <div class="social-icon">
+            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <span>linkedin</span>
+          </div>
+        </div>
+      </div>
+
+      <p>all rights reserved @2022 | Made By <span>Milad abdo</span> with <span>&hearts;</span></p>
+
+    </footer>
+    
+
+    <!-- =================== footer end =================== -->
+
+    <!-- =================== js files =================== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
